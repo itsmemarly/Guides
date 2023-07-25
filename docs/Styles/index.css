@@ -1,0 +1,28 @@
+/* Custom styles */
+
+.category-button, .footer-category-button {
+    border-color: black;
+    color: black;
+  }
+  
+  .category-button.active, .footer-category-button.active {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .category-button:hover, .footer-category-button:hover {
+    background-color: black;
+    color: #fff;
+  }
+  
+  /* Custom CSS for the category cards */
+.card-body {
+    height: 50%; /* Set the height of the card body to 50% of its container */
+  }
+  
+  .card-img-top {
+    height: 200px; /* You can adjust this value to your desired image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the whole container */
+  }
+  
+  
