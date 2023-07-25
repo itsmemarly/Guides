@@ -19,7 +19,29 @@
 
 <body>
   <header>
-    <!-- place navbar here -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Guides</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog [coming soon]</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact [coming soon]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
   <main class="container my-4">
     <!-- Search bar -->
@@ -28,26 +50,24 @@
     </div>
 
         <div class="container">
-      <div class="row">
-        <div class="col">
+      <div class="row ">
+        <div class="col mb-4">
             <button class="btn btn-outline-dark footer-category-button" data-category="">All</button>
           </div>
-        <div class="col">
-          <button class="btn btn-outline-dark footer-category-button" data-category="tech">Tech</button>
+
+        <div class="col mb-4">
+          <button class="btn btn-outline-dark footer-category-button" data-category="health">Health</button>
         </div>
-        <div class="col">
-          <button class="btn btn-outline-dark footer-category-button" data-category="mental-health">Mental Health</button>
-        </div>
-        <div class="col">
+        <div class="col mb-4">
           <button class="btn btn-outline-dark footer-category-button" data-category="hobbies">Hobbies</button>
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <button class="btn btn-outline-dark footer-category-button" data-category="travel">Travel</button>
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <button class="btn btn-outline-dark footer-category-button" data-category="languages">Languages</button>
         </div>
-        <div class="col">
+        <div class="col mb-4">
           <button class="btn btn-outline-dark footer-category-button" data-category="others">Others</button>
         </div>
       </div>

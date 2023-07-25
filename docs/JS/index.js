@@ -1,12 +1,12 @@
 const categoriesData = [
     // Git Starter Guide
-    { category: "tech", title: "Git Starter Guide", description: "Want to get started with Git? Let's learn together!", imageUrl: "./Images/Git_Starter_Guide.png", url: "./Guides/GitStarterGuide.html" },
+    { category: "others", title: "Git Starter Guide", description: "Want to get started with Git? Let's learn together!", imageUrl: "./Images/Git_Starter_Guide.png", url: "./Guides/GitStarterGuide.html" },
 
     // Git Guide
-    { category: "tech", title: "The Ultimate Git Guide", description: "The ultimate Git guide is a guide that will help you get started with Git commands.", imageUrl: "./Images/The_ultimate_Git_Guide.png", url: "./Guides/TheUltimateGitGuide.html" },
+   // { category: "others", title: "The Ultimate Git Guide", description: "The ultimate Git guide is a guide that will help you get started with Git commands.", imageUrl: "./Images/The_ultimate_Git_Guide.png", url: "./Guides/TheUltimateGitGuide.html" },
     
     // Python Guide
-    { category: "tech", title: "The Ultimate Python Guide", description: "The ultimate Python guide is a guide that will help you get started with Python.", imageUrl: "./Images/The_ultimate_Python_Guide.png", url: "./Guides/TheUltimatePythonGuide.html" },
+    //{ category: "others", title: "The Ultimate Python Guide", description: "The ultimate Python guide is a guide that will help you get started with Python.", imageUrl: "./Images/The_ultimate_Python_Guide.png", url: "./Guides/TheUltimatePythonGuide.html" },
 
   ];
   

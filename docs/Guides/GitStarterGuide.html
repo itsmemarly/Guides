@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Guides - Git Starter Guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../Styles/guides.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+   
+        <ul class="navbar-nav ms-auto col-md-4">
+        <a class="navbar-brand mr-auto" href="./../index.html">My Guides - Git Starter Guide</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto ml-auto">
+ 
+            <li class="nav-item">
+              <a class="nav-link" href="./../index.html">Back to Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container my-4">
+      
+      <div class="row justify-content-center">
+        <!-- Guide content for Git Starter Guide -->
+        <div class="card col-md-8 col-sm-10">
+          <img src="./../Images/git_starter_guide.png" class="card-img-top my-4" alt="Git Starter Guide Image">
+          <div class="card-body" id="guideContent">
+            <h1 class="card-title">Git Starter Guide</h1>
+            <p class="card-text">In this guide, we will cover the basics of Git and how to get started with version
+              control for your projects.</p>
+            <p class="card-text">Welcome to the Git Starter's Guide for Students! Git is a powerful version control system that helps you manage and track changes in your code projects. Whether you are a computer science student or just getting started with programming, learning Git will be a valuable skill throughout your academic and professional journey. This guide will introduce you to the basics of Git and help you get started with version control.</p>
+      
+            <h2>Section 1: What is Git and Version Control?</h2>
+            <h3>1.1 Understanding Version Control:</h3>
+            <p>Version control is a system that helps you keep track of changes in your code and collaborate with others effectively. It maintains a history of all modifications, allowing you to revert to previous versions if needed.</p>
+      
+            <h3>1.2 Introducing Git:</h3>
+            <p>Git is a distributed version control system that is widely used in the software industry. It allows multiple developers to work on a project simultaneously while keeping track of all changes.</p>
+      
+            <h2>Section 2: Installing Git and Initial Configuration</h2>
+            <h3>2.1 Installing Git:</h3>
+            <p>Install Git on your system by following the instructions for your operating system:</p>
+            <pre><code>Windows: Download the Git installer from the official website and follow the installation wizard.
+      macOS: Git comes pre-installed on macOS. You can also install it using a package manager like Homebrew (brew install git).
+      Linux: Use your package manager to install Git (e.g., sudo apt-get install git for Debian/Ubuntu).</code></pre>
+      
+            <h3>2.2 Initial Configuration:</h3>
+            <p>After installing Git, set your username and email address using the following commands:</p>
+            <pre><code>git config --global user.name "Your Name"
+      git config --global user.email "your.email@example.com"</code></pre>
+      
+            <h2>Section 3: Basic Git Concepts</h2>
+            <h3>3.1 Git Repository:</h3>
+            <p>A Git repository is a directory where Git tracks your project's files and their changes. To initialize a new Git repository or clone an existing one, use the following commands:</p>
+            <pre><code>git init            # Initialize a new Git repository in the current directory
+      git clone &lt;URL&gt;     # Clone an existing Git repository from a remote source</code></pre>
+      
+            <h3>3.2 Committing Changes:</h3>
+            <p>Committing changes allows you to save your modifications to the codebase. Use the following commands to commit changes:</p>
+            <pre><code>git status              # View the status of your changes
+      git add &lt;file&gt;          # Stage a specific file for the next commit
+      git add .               # Stage all changes for the next commit
+      git commit -m "message" # Commit your changes with a meaningful message</code></pre>
+      
+            <h3>3.3 Branching and Merging:</h3>
+            <p>Branching allows you to work on separate features or fixes without affecting the main codebase. Merge branches to combine changes. Use the following commands:</p>
+            <pre><code>git branch                 # List all branches, showing the current branch with an asterisk (*)
+      git branch &lt;branch_name&gt;   # Create a new branch
+      git checkout &lt;branch_name&gt; # Switch to an existing branch
+      git merge &lt;branch_name&gt;    # Merge changes from the specified branch into the current branch</code></pre>
+      
+            <h2>Section 4: Collaborating with Git</h2>
+            <h3>4.1 Cloning a Repository:</h3>
+            <p>To collaborate on a project, clone an existing remote repository to your local machine using the following command:</p>
+            <pre><code>git clone &lt;URL&gt;           # Clone a remote repository to your local machine</code></pre>
+      
+            <h3>4.2 Pulling Changes:</h3>
+            <p>Keep your local repository up to date with the latest changes from the remote repository using the following command:</p>
+            <pre><code>git pull origin &lt;branch&gt;  # Pull the latest changes from the remote repository into your current branch</code></pre>
+      
+            <h3>4.3 Pushing Changes:</h3>
+            <p>Upload your local changes to the remote repository to share your work with others. Use the following command:</p>
+            <pre><code>git push origin &lt;branch&gt;  # Push your local changes to the remote repository in the specified branch</code></pre>
+      
+            <h3>4.4 Handling Merge Conflicts:</h3>
+            <p>When merging branches, conflicts may arise if Git can't automatically resolve differences. Manually resolve conflicts using the following steps:</p>
+            <pre><code>1. After attempting to merge, Git will indicate which files have conflicts.
+      2. Open the files and manually edit them to resolve conflicts.
+      3. Once conflicts are resolved, add and commit the changes.
+      git add &lt;file&gt;            # Stage the resolved changes
+      git commit -m "message"   # Commit the resolved changes</code></pre>
+      
+            <h2>Section 5: Advanced Git Topics (Optional)</h2>
+            <h3>5.1 Git Ignore:</h3>
+            <p>Create a .gitignore file to specify which files and directories Git should ignore. Add patterns for ignored files and directories like this:</p>
+            <pre><code># Create a new .gitignore file using a text editor and add patterns for ignored files and directories.
+      # For example, to ignore all .log files and the 'node_modules' directory:
+      *.log
+      node_modules/</code></pre>
+      
+            <h3>5.2 Undoing Changes:</h3>
+            <p>Undo commits and revert changes using various Git commands like reset and revert (use with caution).</p>
+            <pre><code>git log                  # View the commit history to identify the commit you want to undo
+      git reset --hard &lt;commit_hash&gt;  # Move the branch pointer to the specified commit, discarding subsequent changes
+      git revert &lt;commit_hash&gt;        # Create a new commit that undoes the changes introduced by the specified commit</code></pre>
+      
+            <h3>5.3 Git Workflow Strategies:</h3>
+            <p>Explore different Git workflows like Gitflow and GitHub Flow to understand more advanced collaboration techniques.</p>
+      
+            <h2>Conclusion:</h2>
+            <p>Congratulations! You have completed the Git Starter's Guide for Students. By mastering Git, you've gained a fundamental skill that will help you collaborate effectively on coding projects and enhance your software development capabilities. Remember to keep practicing and exploring more advanced Git features as you progress in your programming journey. Happy coding!</p>
+          <!-- "Download the Git Starter Guide as a PDF" button -->
+          <a href="./../Files/GitStarterGuide.pdf" class="btn btn-custom-color mt-4" download>Download the Git Starter Guide as a PDF</a>
+         </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </main>
+
+  <footer>
+    <!-- Your footer content goes here -->
+  </footer>
+
+  <!-- Link Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Your custom JS -->
+  <script src="./../JS/guides.js"></script>
+</body>
+
+</html>
